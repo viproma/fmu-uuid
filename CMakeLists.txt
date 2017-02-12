@@ -14,3 +14,5 @@ find_package(Boost REQUIRED)
 
 add_executable("fmu-uuid" "fmu-uuid.cpp")
 target_include_directories("fmu-uuid" PRIVATE ${Boost_INCLUDE_DIRS})
+
+install(TARGETS "fmu-uuid" RUNTIME DESTINATION "bin")
