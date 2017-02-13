@@ -136,7 +136,7 @@ void Run(
 
 std::string ReadFile(const std::string& path)
 {
-    auto stream = std::ifstream{path, std::ios_base::binary};
+    std::ifstream stream{path, std::ios_base::binary};
     if (!stream) {
         throw std::runtime_error("Failed to open file: " + path);
     }
@@ -146,7 +146,7 @@ std::string ReadFile(const std::string& path)
 
 void WriteFile(const std::string& path, const std::string& string)
 {
-    auto stream = std::ofstream{path, std::ios_base::binary};
+    std::ofstream stream{path, std::ios_base::binary};
     if (!stream) {
         throw std::runtime_error("Failed to open file: " + path);
     }
