@@ -79,4 +79,6 @@ installed.
 
 Terms of use
 ------------
-This software is subject to the terms of the 3-Clause BSD License.
+This software is distributed under the 3-Clause BSD License.
+(See accompanying file LICENCE.txt or copy at
+https://raw.githubusercontent.com/viproma/fmu-uuid/master/LICENCE.txt.)
