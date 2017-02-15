@@ -4,7 +4,7 @@ project(fmu-uuid)
 if(MSVC)
     add_compile_options("/WX" "/wd4996")
 elseif(CMAKE_COMPILER_IS_GNUCXX)
-    add_compile_options("-std=c++1y" "-Wall" "-Werror")
+    add_compile_options("-std=c++1y" "-Wall" "-Wextra" "-Werror")
 endif()
 
 if(WIN32)
